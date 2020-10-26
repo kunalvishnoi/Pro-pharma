@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Pro Pharma || Products</title>
+  <title>Pro Pharma || Contact</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -153,12 +153,12 @@
   <header>
 
     <!-- Navbar -->
-    <nav class="navbar  navbar-expand-lg navbar-dark scrolling-navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
       <div class="container">
 
         <!-- Brand -->
         <a class="navbar-brand" href="/">
-          <strong><img src="../img/logo.png" height="40px"/></strong>
+          <strong><img src="../img/logo.png" height="40px" /></strong>
         </a>
 
         <!-- Collapse -->
@@ -182,19 +182,25 @@
                 
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
+            <li class="nav-item">
+              <a class="nav-link" href="/products">
                 Our Products
+                
+            </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/products">
+                Verify
                 <span class="sr-only">(current)</span>
             </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="/verify">
-                Verify</a>
+              <a class="nav-link" href="/contact">Contact Us
+                
+              </a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="/contact">Contact Us</a>
-            </li>
+
           </ul>
 
           <!-- Right -->
@@ -210,10 +216,10 @@
               </a>
             </li>
             <li class="nav-item">
-                <a href="https://api.whatsapp.com/send?phone=+919654243373" class="nav-link border border-light rounded"
+              <a href="https://api.whatsapp.com/send?phone=+919654243373" class="nav-link border border-light rounded"
                 target="_blank">
-                Send Message
                 <img src="../img/whats.png" width="30px"/>
+                Send Message
               </a>
             </li>
           </ul>
@@ -226,70 +232,49 @@
   </header>
 
   <!--Main layout-->
-  <main class="py-5 black" id="back">
-      <div class="container text-white">
-          <h1 class="text-center pb-5 text-white">Our Products</h1>
-          <div class="row">
-              <div class=" col-md-4 pt-1">
-                <img src="../img/product1.jpg" width="100%" />
-                <h3 class="text-center pt-2">Anabolic Mass</h3>    
-                <!-- <p class="text-center">100% WHEY-WHEY Isolate Gold </p> -->
-              </div>
-              <div class=" col-md-4 pt-1">
-                    <img src="../img/product2.jpg" width="100%" />
-                    <h3 class="text-center pt-2">Animal Mass</h3>    
-                    <!-- <p class="text-center">Ultra High Quality Protein and Addes Creatine</p> -->
-                </div>
-                <div class=" col-md-4 pt-1">
-                    <img src="../img/product3.jpg" width="100%" />
-                    <h3 class="text-center pt-2">Gold Whey</h3>    
-                    <!-- <p class="text-center">Muscle & Weight Enhancing Protein Blend</p> -->
-                </div>
+  <main class="py-5 black">
+      <!--Section: Contact v.2-->
+<section class="mb-4 px-3 text-white">
 
-          </div>
-          <div class="row">
-                <div class=" col-md-4 pt-1">
-                  <img src="../img/product4.jpg" width="100%" />
-                  <h3 class="text-center pt-2">Super Mass</h3>    
-                  <!-- <p class="text-center">Increase Muscle Strength</p> -->
-                </div>
-                <div class=" col-md-4 pt-1">
-                  <img src="../img/p2.jpg" width="100%" />
-                  <h3 class="text-center pt-2">Top Gainer</h3>    
-                  <!-- <p class="text-center">Increase Muscle Strength</p> -->
-                </div>
-                <div class=" col-md-4 pt-1">
-                  <img src="../img/p3.jpg" width="100%" />
-                  <h3 class="text-center pt-2">Gold Mass Gainer 7000</h3>    
-                  <!-- <p class="text-center">Increase Muscle Strength</p> -->
-                </div>
-                <!-- <div class=" col-md-4 pt-1">
-                    <img src="../img/6.jpg" width="100%" />
-                    <h3 class="text-center pt-2">BCCA</h3>    
-                    <p class="text-center">Support Muscle Growth!</p>
-                </div>
-               
-                  <div class=" col-md-4 pt-1">
-                          <img src="../img/5.jpg" width="100%" />
-                          <h3 class="text-center pt-2">Glutamine 100 Micronized</h3>    
-                          <p class="text-center">Stimulate Growth Harmone</p>
-                  </div> -->
-            </div>
-
-            <!-- <div class="row">
-                    <div class=" col-md-4 offset-md-2 pt-1">
-                      <img src="../img/7.jpg" width="100%" />
-                      <h3 class="text-center pt-2">Shot 4</h3>    
-                      <p class="text-center">Explosive Energy withy Careatine Nitrate</p>
-                    </div>
-                    <div class=" col-md-4 pt-1">
-                          <img src="../img/coming-soon.jpg" width="100%" height="265px" />
-                          <h3 class="text-center pt-2">Hypertonic</h3>    
-                          <p class="text-center">1nstant Energy Formula</p>
-                      </div>
-                </div> -->
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center pt-5 my-4">Verify</h2>
+    <!--Section description-->
+    
+        <div class="container -4">
+        <div class="row">
           
+          <div class="col-md-6 offset-md-3">
+            <form onsubmit="event.preventDefault(); checkFunction();">
+                    <div class="col-md-12 text-center my-2">
+                    <input type="number" class="form-control" id="token" placeholder="Enter Unique ID"/>
+                </div>
+                
+                        <div class="col-md-12 text-center my-2">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        
+                </form>
+
+                <div class="text-center" id="message"/>
+          </div>
+          <div id="message">
+
+
+
+          
+        </div>
       </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3501.6611618288725!2d77.2711521005521!3d28.639915740411446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s56%2Ckishan+kunj+extension+Part-1+laxmi+nagar+delhi!5e0!3m2!1sen!2sin!4v1563300312094!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <p class="text-center pt-4">56,Kishan Kunj Extension, Part-1, Laxmi Nagar, Delhi-110092</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
   </main>
   <!--Main layout-->
 
@@ -311,7 +296,8 @@
           <i class="fab fa-instagram mr-3"></i>
         </a>
   
-      </div>
+    </div>
+
 
     <div class="footer-copyright py-3">
       © 2019 Copyright:
@@ -321,6 +307,41 @@
 
   </footer>
   <!--/.Footer-->
+
+    <script type="text/javascript">
+  function checkFunction() {
+    
+  var token = document.getElementById('token').value;
+
+
+const data = { key: token };
+
+fetch('https://keys-generator.herokuapp.com/api/productC/verify', {
+  method: 'POST', // or 'PUT'
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+})
+.then(response => response.json())
+.then(data => {
+  if(data.success) {
+    document.getElementById("message").innerHTML = "This Product is Genuine. Thanks for being a valuable customer of Advance Muscle Pump Nutition"
+  }
+  else {
+    document.getElementById("message").innerHTML = "This Product is Not Genuine."
+  }
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+
+
+}
+
+
+
+</script>
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
