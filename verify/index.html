@@ -316,7 +316,7 @@
 
 const data = { key: token };
 
-fetch('https://keys-generator.herokuapp.com/api/productC/verify', {
+fetch('https://keys-generator.herokuapp.com/api/productD/verify', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
@@ -326,7 +326,7 @@ fetch('https://keys-generator.herokuapp.com/api/productC/verify', {
 .then(response => response.json())
 .then(data => {
   if(data.success) {
-    document.getElementById("message").innerHTML = "This Product is Genuine. Thanks for being a valuable customer of Advance Muscle Pump Nutition"
+    document.getElementById("message").innerHTML = "This Product is Genuine. Thanks for being a valuable customer of Pro Pharma"
   }
   else {
     document.getElementById("message").innerHTML = "This Product is Not Genuine."
