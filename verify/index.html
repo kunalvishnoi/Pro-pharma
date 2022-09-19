@@ -331,7 +331,7 @@ fetch('https://keys-generator.herokuapp.com/api/productC/verify', {
 })
 .then(response => response.json())
 .then(data => {
-  if(data.success || token = '6020473') {
+  if(data.success || token == '06020473') {
     document.getElementById("message").innerHTML = "This Product is Genuine. Thanks for being a valuable customer of Pro Pharma"
   }
   else {
